@@ -1,0 +1,15 @@
+p {
+  margin: 0px;
+  font-size: 2em;
+  float: left;
+  margin-right: 5%;
+}
+
+.stop {
+  float: left;
+  margin-right: 7%;
+}
+
+#stopall {
+  margin-top: 2%;
+}
