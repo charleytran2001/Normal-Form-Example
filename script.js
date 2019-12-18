@@ -1,33 +1,10 @@
-function stop1() {
-  clearInterval(run1);
-}
-
-function stop2() {
-  clearInterval(run2);
-}
-
-function stop3() {
-  clearInterval(run3);
-}
-
-function stopAll() {
-  clearInterval(run1);
-  clearInterval(run2);
-  clearInterval(run3);
-}
-
-function resetAll() {
-  clearInterval(run1);
-  clearInterval(run2);
-  clearInterval(run3);
-  run1 = setInterval(random1, 50);
-  run2 = setInterval(random2, 50);
-  run3 = setInterval(random3, 50);
-}
-
 var num1 = document.getElementById("num1");
 var num2 = document.getElementById("num2");
 var num3 = document.getElementById("num3");
+
+var run1 = setInterval(random1, 50);
+var run2 = setInterval(random2, 50);
+var run3 = setInterval(random3, 50);
 
 function random1() {
   var num1Random = Math.floor(Math.random() * 1000);
@@ -64,6 +41,29 @@ function random3() {
   num3.innerHTML = num3String;
 }
 
-var run1 = setInterval(random1, 50);
-var run2 = setInterval(random2, 50);
-var run3 = setInterval(random3, 50);
+function stop1() {
+  clearInterval(run1);
+}
+
+function stop2() {
+  clearInterval(run2);
+}
+
+function stop3() {
+  clearInterval(run3);
+}
+
+function stopAll() {
+  clearInterval(run1);
+  clearInterval(run2);
+  clearInterval(run3);
+}
+
+function resetAll() {
+  clearInterval(run1);
+  clearInterval(run2);
+  clearInterval(run3);
+  run1 = setInterval(random1, 50);
+  run2 = setInterval(random2, 50);
+  run3 = setInterval(random3, 50);
+}

@@ -5,18 +5,56 @@
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
+  
 <body>
-  <p id="num1">123</p>
-  <p id="num2">456</p>
-  <p id="num3">7890</p>
-  <button type="button" id="stopall" onclick="stopAll()">Stop All</button>
-  <button type="button" id="stopall" onclick="resetAll()">Reset</button>
-  <br><br>
-  <button type="button" class="stop" onclick="stop1()">Stop</button>
-  <button type="button" class="stop" onclick="stop2()">Stop</button>
-  <button type="button" class="stop" onclick="stop3()">Stop</button>
+  <form>
+    <h1>Form Example</h1>
+    <br>
+    
+    <table>
+      <tr class="form">
+        <td>Full Name*</td>
+        <td><input type="text"></input></td>
+      </tr>
+  
+      <tr>
+        <td>Phone Number*</td>
+        <td>
+          <table id="phone">
+            <tr>
+              <td><p id="num1">123</p></td>
+              <td><p id="num2">456</p></td>
+              <td><p id="num3">7890</p></td>
+              <td><button type="button" id="stopall" onclick="stopAll()">Stop All</button></td>
+            </tr>
+
+            <tr>
+              <td><button type="button" class="stop" onclick="stop1()">Stop</button></td>
+              <td><button type="button" class="stop" onclick="stop2()">Stop</button></td>
+              <td><button type="button" class="stop" onclick="stop3()">Stop</button></td>
+              <td><button type="button" id="stopall" onclick="resetAll()">Reset</button></td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+    
+      <tr class="form">
+        <td>Email Address*</td>
+        <td><input type="email"></input></td>
+      </tr>
+  
+    </table>
+    
+  <br>
+  <button type="submit">Submit</button>
+    
+  </form>
 
   <script src="script.js"></script>
+  
 </body>
+
 </html>
