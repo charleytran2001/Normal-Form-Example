@@ -13,15 +13,16 @@
     <h1>Form Example</h1>
     <br>
     
-    <table>
-      <tr class="form">
-        <td>Full Name*</td>
-        <td><input type="text"></input></td>
+    <table id="mainform">
+      <tr class="form">    
+        <td><p class="title">First Name</p><input type="text" placeholder="Brandon"></input></td>
+        <td><p class="title">Last Name</p><input type="text" placeholder="Brown"></input></td>
       </tr>
   
       <tr>
-        <td>Phone Number*</td>
-        <td>
+        <td><p class="title">Email Address</p><input type="email" placeholder="aaaaaaaaaaa@aaaa.com"></input></td>
+
+        <td><p class="title">Phone Number</p>
           <table id="phone">
             <tr>
               <td><p id="num1">123</p></td>
@@ -36,20 +37,31 @@
               <td><button type="button" class="stop" onclick="stop3()">Stop</button></td>
               <td><button type="button" id="stopall" onclick="resetAll()">Reset</button></td>
             </tr>
-
+            
           </table>
+          
         </td>
+        
       </tr>
     
-      <tr class="form">
-        <td>Email Address*</td>
-        <td><input type="email"></input></td>
-      </tr>
-  
+    <tr>    
+      <td><p class="title">Street Address</p>
+        <input type="text" placeholder="12345 W Blueberry St"></input></td>
+<td><p class="title">City</p>
+        <input type="text" placeholder="Nowhereland"></input></td>
+<td><p class="title">Zip</p>
+        <input type="text" placeholder="12345"></input></td>
+    </tr>
+
+    <tr>
+      <td>
+        <button type="submit" id="submitbutton">Submit</button>
+      </td>
+    </tr>
+
     </table>
     
   <br>
-  <button type="submit">Submit</button>
     
   </form>
 

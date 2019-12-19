@@ -14,7 +14,7 @@ function random1() {
   } else if(num1Random < 100) {
     num1String = "0" + num1String;
   }
-  num1.innerHTML = num1String;
+  num1.innerHTML = "( " + num1String + " )";
 }
 
 function random2() {
@@ -25,7 +25,7 @@ function random2() {
   } else if(num2Random < 100) {
     num2String = "0" + num2String;
   }
-  num2.innerHTML = num2String;
+  num2.innerHTML = num2String + " -";
 }
 
 function random3() {

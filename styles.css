@@ -5,18 +5,34 @@
 }
 
 html {
-  background-color: white;
+  background-color: whitesmoke;
 }
 
-p {
+table#mainform {
+  margin: auto;
+  width: 50%;
+}
+
+p.title {
+    margin: 0px 20px 2px 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#num1, #num2, #num3 {
   font-size: 150%;
 }
 
 input {
+  padding: 5px 10px;
+  margin: 0px 20px 20px 20px;
   font-size: 125%;
-  border: none;
-  background-color: whitesmoke;
-  border-radius: 3px;
+  border: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  border-radius: 5px;
   width: 250px
 }
 
@@ -25,16 +41,27 @@ button {
   border: none;
   height: 25px;
   width: 60px;
+  background-color: dodgerblue;
+  color: white;
 }
 
 table#phone td {
+  padding: 0px 1px 5px 0px;
   text-align: center;
+}
+
+p#phonetitle {
+  margin-top: 30px
+}
+
+table#phone {
+  margin: 0px 20px 20px 20px;
+}
+
+td p#num2 {
+  text-align: right;
 }
 
 tr.form td {
   width: 50%;
-}
-
-body {
-  margin: 1%;
 }
